@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display-ar: "Amiri", "Noto Naskh Arabic", serif;
+  --font-body-ar: "Noto Naskh Arabic", "Amiri", serif;
+
+  /* Brand palette sampled from the official logo */
+  --color-brand-50: #eef3fa;
+  --color-brand-100: #dbe5f4;
+  --color-brand-200: #b9cce8;
+  --color-brand-300: #8eabd8;
+  --color-brand-400: #5c83c4;
+  --color-brand-500: #3f6cb3;
+  --color-brand-600: #2c599d;
+  --color-brand-700: #244a83;
+  --color-brand-800: #1e3c6a;
+  --color-brand-900: #182f53;
+  --color-brand-950: #0f1e36;
+
+  --color-accent-50: #fff5ec;
+  --color-accent-100: #ffe8d4;
+  --color-accent-200: #fecfa8;
+  --color-accent-300: #fdb57d;
+  --color-accent-400: #fb9b51;
+  --color-accent-500: #f5822e;
+  --color-accent-600: #d9661a;
+  --color-accent-700: #b04f14;
+
+  --color-ink: #666666;
+  --color-whatsapp: #25d366;
+
+  --animate-float: float 8s ease-in-out infinite;
+  --animate-ping-slow: ping 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+/* Glassmorphism panels (light) */
+@utility glass {
+  @apply border border-white/70 bg-white/55 shadow-[0_10px_40px_-14px_rgba(44,89,157,0.28)] ring-1 ring-brand-600/5 backdrop-blur-md;
+}
+@utility glass-strong {
+  @apply border border-white/80 bg-white/80 shadow-[0_10px_40px_-14px_rgba(44,89,157,0.3)] ring-1 ring-brand-600/5 backdrop-blur-xl;
+}
+/* Glass on brand-blue surfaces */
+@utility glass-dark {
+  @apply border border-white/20 bg-white/10 backdrop-blur-md;
+}
+
+@utility text-gradient-brand {
+  @apply bg-gradient-to-br from-brand-700 via-brand-600 to-brand-400 bg-clip-text text-transparent;
+}
+@utility text-gradient-accent {
+  @apply bg-gradient-to-br from-accent-400 via-accent-500 to-accent-600 bg-clip-text text-transparent;
+}
+
+/* Subtle Islamic 8-point star pattern */
+@utility bg-geometric {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%232c599d' stroke-width='1'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3Cpath d='M0 0l22 22M80 0L58 22M0 80l22-22M80 80L58 58'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+@utility bg-geometric-light {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='8'/%3E%3Cpath d='M0 0l22 22M80 0L58 22M0 80l22-22M80 80L58 58'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-brand-50 font-sans text-brand-950 antialiased;
+  }
+  html[lang="ar"] body {
+    font-family: var(--font-body-ar);
+  }
+  html[lang="ar"] .font-display {
+    font-family: var(--font-display-ar);
+  }
+  q {
+    quotes: "“" "”";
+  }
+  html[lang="ar"] q {
+    quotes: "«" "»";
+  }
+  html[lang="fr"] q {
+    quotes: "« " " »";
+  }
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+  ::selection {
+    @apply bg-accent-300/60 text-brand-950;
+  }
+}
+
+.font-amiri {
+  font-family: var(--font-display-ar);
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  *, *::before, *::after { animation: none !important; }
+}

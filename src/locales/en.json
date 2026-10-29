@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "Mahdara Al-Andalous Al-Ilmiyya | Qur'an Memorization & Sharia Sciences",
+    "description": "Mahdara Al-Andalous Al-Ilmiyya — connecting students worldwide with authentic Qur'anic education, in-person and online."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "mission": "Mission & Vision",
+    "objectives": "Objectives",
+    "activities": "Activities",
+    "achievements": "Achievements",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "hero": {
+    "badge": "Licensed Qur'anic School · Mauritania",
+    "title": "Mahdara Al-Andalous Al-Ilmiyya",
+    "titleSuffix": "for Qur'an Memorization and Sharia Sciences",
+    "subtitle": "Connecting students worldwide with authentic Qur'anic education, in-person and online.",
+    "ctaPrimary": "Register via WhatsApp",
+    "ctaSecondary": "Contact Us",
+    "inPerson": "In-person",
+    "online": "Online",
+    "since": "Since 2017"
+  },
+  "about": {
+    "eyebrow": "About the Mahdara",
+    "title": "An established home for Qur'anic learning",
+    "location": { "label": "Location", "value": "Toujounine, Administrative District, Mauritania" },
+    "opened": { "label": "Opening Date", "value": "August 31, 2017" },
+    "license": {
+      "label": "Official License",
+      "value": "February 14, 2018",
+      "numberLabel": "License Number",
+      "number": "000057"
+    },
+    "authority": {
+      "label": "Licensing Authority",
+      "value": "Ministry of Islamic Affairs and Original Education – Directorate of Mahadras and Original Education"
+    }
+  },
+  "mission": {
+    "eyebrow": "Our Purpose",
+    "title": "Mission & Vision",
+    "missionLabel": "Mission",
+    "missionText": "A model modern mahdara that strives through distinguished programs to graduate skilled, proficient reciters who excel in the Holy Qur'an and its sciences.",
+    "visionLabel": "Vision",
+    "visionText": "To serve as an illuminating beacon of knowledge for teaching the Holy Qur'an and its associated disciplines."
+  },
+  "objectives": {
+    "eyebrow": "What We Strive For",
+    "title": "Objectives",
+    "items": [
+      {
+        "title": "Precision in Memorization",
+        "desc": "Ensuring proficient memorization of the Book of Allah paired with proper Tajweed rules and vocal execution."
+      },
+      {
+        "title": "Rigorous Tracking",
+        "desc": "Implementing a precise follow-up and monitoring mechanism for students' memorization and revision cycles."
+      },
+      {
+        "title": "Foundational Literacy",
+        "desc": "Eliminating reading and writing challenges at the foundational stage using structured phonetic spelling methods."
+      },
+      {
+        "title": "Talent Incubation",
+        "desc": "Discovering and actively developing student talents."
+      },
+      {
+        "title": "Competition Readiness",
+        "desc": "Qualifying students to compete in local, national, and international Qur'anic competitions."
+      }
+    ]
+  },
+  "activities": {
+    "eyebrow": "Beyond the Classroom",
+    "title": "Educational Activities",
+    "intro": "The institution places strong emphasis on extracurricular activities in order to:",
+    "items": [
+      "Bridge theoretical knowledge with hands-on practice.",
+      "Foster critical thinking skills, self-confidence, and a sense of responsibility.",
+      "Instill authentic Islamic values and high moral character."
+    ],
+    "photoCaption": "Shared joy between teachers and students"
+  },
+  "achievements": {
+    "eyebrow": "Milestones",
+    "title": "Achievements & Programs",
+    "stats": {
+      "memorizers": "Total Certified Memorizers",
+      "graduates": "Total Graduates"
+    },
+    "competition": {
+      "year": "2020",
+      "title": "National Competition Results",
+      "desc": "Secured half of all qualifying spots for the International Competition.",
+      "division": "Youth/Cubs Division",
+      "highlight": "Half of all qualifying spots",
+      "winners": [
+        { "name": "Mohamed Mahmoud Ahmedou Bedou", "place": "1st Place" },
+        { "name": "Atah Mohamedou", "place": "3rd Place" },
+        { "name": "Mohamed Sedatt", "place": "5th Place" }
+      ]
+    },
+    "courses": {
+      "title": "Specialized Courses",
+      "desc": "Tajweed Didactic Poems",
+      "items": ["Tuhfat al-Atfal", "Al-Muqaddimah al-Jazariyya"]
+    },
+    "programs": {
+      "title": "Recurring Programs",
+      "items": [
+        { "name": "Ramadan Qur'an Contest", "tagline": "Race of the Hafiz" },
+        { "name": "Term Recognitions", "tagline": "A Station for Reflection and a Renewed Launch" }
+      ]
+    },
+    "honors": {
+      "title": "Honouring Our Memorizers",
+      "desc": "Certificates of honour presented to the 6th cohort of Hafiz memorizers"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Moments of Pride",
+    "title": "Graduation Ceremony",
+    "desc": "Graduation of the 5th Ijazah cohort and the 6th cohort of Hafiz memorizers",
+    "date": "July 29, 2026",
+    "view": "View photo",
+    "close": "Close",
+    "prev": "Previous photo",
+    "next": "Next photo"
+  },
+  "photos": {
+    "femaleGraduates": "Female graduates holding their Ijazah certificates",
+    "studentsCertificates": "Graduating students proudly holding their certificates",
+    "teachersGraduates": "Teachers and graduates at the graduation ceremony",
+    "ijazahRecipient": "A graduate presenting her Ijazah in the recitation of Imam Nafi'",
+    "celebration": "A teacher and a graduate celebrating together",
+    "teacherStudent": "A teacher honouring a young memorizer",
+    "nafiIjazah": "A graduate receiving his Ijazah in the recitation of Imam Nafi'",
+    "honorCertificate1": "A memorizer receiving his certificate of honour",
+    "honorCertificate2": "A proud moment as a memorizer is honoured",
+    "youngHafiz": "A young memorizer with his certificate of honour"
+  },
+  "contact": {
+    "title": "Begin your Qur'anic journey",
+    "desc": "Whether you are joining us in Mauritania or online from anywhere in the world, our team is ready to answer your questions on WhatsApp.",
+    "cta": "Register via WhatsApp",
+    "phoneLabel": "WhatsApp"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "license": "License No. 000057"
+  },
+  "whatsapp": {
+    "label": "Chat with us on WhatsApp"
+  }
+}
