@@ -16,4 +16,7 @@ Static showcase site: Vite + React 19 + Tailwind CSS v4 + react-i18next, deploye
 - Glass panels use the `glass` / `glass-strong` utilities (light surfaces) and `glass-dark` (on blue surfaces), defined in `src/index.css`.
 - Photos live in `public/images/` and are registered in `PHOTOS` (`src/constants.js`); render them with `<Photo name="..." />` (alt text comes from `photos.<key>` in the locale files). Used in Hero, About, Mission & Vision, Objectives (first card), Activities, Achievements ("Honouring Our Memorizers" strip) and the Gallery section (curated order + lightbox in `Gallery.jsx`).
 - Logos live in `public/`: `logo-mark.png` (circular, used in navbar/footer via `<Logo />`), `logo-full.png` (transparent lockup, hero), plus `favicon.png` / `apple-touch-icon.png`.
-- WhatsApp URL and shared constants: `src/constants.js`.
+- WhatsApp URL and shared constants: `src/constants.js`. `NAV_ITEMS` = top navbar (keep ≤ 7), `FOOTER_NAV` = every section.
+- Page order (App.jsx): Hero → About → Faculty → MissionVision → Objectives → Programs → Activities → Achievements → Testimonials → Gallery → FAQ → Contact.
+- `testimonials.items` in the locale files are PLACEHOLDERS — must be replaced with real, consented testimonials before launch.
+- Faculty attestation is a translated *summary* built from known license facts — do not add fake seals/signatures.

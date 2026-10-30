@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { MapPin } from 'lucide-react'
-import { LATIN_NAME, NATIVE_NAME, NAV_ITEMS } from '../constants'
+import { FOOTER_NAV, LATIN_NAME, NATIVE_NAME } from '../constants'
 import { Logo } from './ui'
 
 export default function Footer() {
@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
         <nav aria-label="Footer">
           <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/75">
-            {NAV_ITEMS.map((key) => (
+            {FOOTER_NAV.map((key) => (
               <li key={key}>
                 <a href={`#${key}`} className="transition hover:text-accent-300">{t(`nav.${key}`)}</a>
               </li>

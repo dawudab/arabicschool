@@ -1,11 +1,15 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Faculty from './components/Faculty'
 import MissionVision from './components/MissionVision'
 import Objectives from './components/Objectives'
+import Programs from './components/Programs'
 import Activities from './components/Activities'
 import Achievements from './components/Achievements'
+import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
+import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
@@ -30,11 +34,15 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Faculty />
         <MissionVision />
         <Objectives />
+        <Programs />
         <Activities />
         <Achievements />
+        <Testimonials />
         <Gallery />
+        <FAQ />
         <Contact />
       </main>
       <Footer />

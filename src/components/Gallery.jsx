@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { CalendarDays, ChevronLeft, ChevronRight, Expand, X } from 'lucide-react'
+import { CalendarDays, ChevronLeft, ChevronRight, Expand, X, ZoomIn, ZoomOut } from 'lucide-react'
 import { photo } from '../constants'
 import { Photo, Reveal, Section } from './ui'
 
@@ -37,6 +37,26 @@ function Lightbox({ index, onClose, onNavigate }) {
   const isRtl = i18n.dir() === 'rtl'
   const total = ITEMS.length
   const current = ITEMS[index]
+  const scrollRef = useRef(null)
+  const focusPoint = useRef({ x: 0.5, y: 0.5 })
+  const [zoomed, setZoomed] = useState(false)
+
+  useEffect(() => setZoomed(false), [index])
+
+  const toggleZoom = (e) => {
+    if (e && !zoomed) {
+      const r = e.currentTarget.getBoundingClientRect()
+      focusPoint.current = { x: (e.clientX - r.left) / r.width, y: (e.clientY - r.top) / r.height }
+    } else focusPoint.current = { x: 0.5, y: 0.5 }
+    setZoomed((z) => !z)
+  }
+
+  useLayoutEffect(() => {
+    const el = scrollRef.current
+    if (!zoomed || !el) return
+    el.scrollLeft = focusPoint.current.x * el.scrollWidth - el.clientWidth / 2
+    el.scrollTop = focusPoint.current.y * el.scrollHeight - el.clientHeight / 2
+  }, [zoomed])
 
   useEffect(() => {
     const previousFocus = document.activeElement
@@ -79,15 +99,29 @@ function Lightbox({ index, onClose, onNavigate }) {
         <ChevronRight className="size-6 rtl:-scale-x-100" />
       </button>
 
+      <button
+        type="button"
+        onClick={(e) => (e.stopPropagation(), toggleZoom())}
+        aria-label={zoomed ? t('gallery.zoomOut') : t('gallery.zoomIn')}
+        aria-pressed={zoomed}
+        className="glass-dark absolute top-4 end-18 z-10 flex size-11 cursor-pointer items-center justify-center rounded-full text-white transition hover:bg-white/25"
+      >
+        {zoomed ? <ZoomOut className="size-5" /> : <ZoomIn className="size-5" />}
+      </button>
+
       <figure className="flex max-h-full w-full max-w-5xl flex-col items-center" onClick={(e) => e.stopPropagation()}>
-        <img
-          key={current.src}
-          src={current.src}
-          alt={t(`photos.${current.key}`)}
-          width="1024"
-          height="768"
-          className="max-h-[78vh] w-auto rounded-2xl object-contain shadow-2xl"
-        />
+        {/* dir="ltr" keeps scrollLeft maths consistent in RTL */}
+        <div ref={scrollRef} dir="ltr" className={`max-h-[78vh] max-w-full rounded-2xl shadow-2xl ${zoomed ? 'overflow-auto overscroll-contain' : 'overflow-hidden'}`}>
+          <img
+            key={current.src}
+            src={current.src}
+            alt={t(`photos.${current.key}`)}
+            width="1024"
+            height="768"
+            onClick={(e) => toggleZoom(e)}
+            className={zoomed ? 'w-[1434px] max-w-none cursor-zoom-out' : 'max-h-[78vh] w-auto cursor-zoom-in object-contain'}
+          />
+        </div>
         <figcaption className="mt-4 flex w-full items-center justify-between gap-4 text-white/90">
           <span className="text-base sm:text-lg">{t(`photos.${current.key}`)}</span>
           <span className="shrink-0 text-sm text-white/60 tabular-nums" dir="ltr">

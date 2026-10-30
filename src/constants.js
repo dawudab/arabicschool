@@ -3,7 +3,11 @@ export const PHONE_DISPLAY = '+222 33 31 31 50'
 export const NATIVE_NAME = 'محظرة الأندلس العلمية'
 export const LATIN_NAME = 'Mahdara Al-Andalous Al-Ilmiyya'
 
-export const NAV_ITEMS = ['about', 'mission', 'objectives', 'activities', 'achievements', 'gallery', 'contact']
+export const NAV_ITEMS = ['about', 'programs', 'faculty', 'achievements', 'gallery', 'faq', 'contact']
+export const FOOTER_NAV = [
+  'about', 'faculty', 'mission', 'objectives', 'programs', 'activities',
+  'achievements', 'testimonials', 'gallery', 'faq', 'contact',
+]
 
 export const PHOTOS = [
   { key: 'studentsCertificates', src: '/images/graduation-students-certificates.jpg' },

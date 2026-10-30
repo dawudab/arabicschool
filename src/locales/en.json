@@ -14,7 +14,11 @@
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "language": "Language"
+    "language": "Language",
+    "programs": "Programs",
+    "faculty": "Leadership",
+    "testimonials": "Testimonials",
+    "faq": "FAQ"
   },
   "hero": {
     "badge": "Licensed Qur'anic School · Mauritania",
@@ -30,8 +34,14 @@
   "about": {
     "eyebrow": "About the Mahdara",
     "title": "An established home for Qur'anic learning",
-    "location": { "label": "Location", "value": "Toujounine, Administrative District, Mauritania" },
-    "opened": { "label": "Opening Date", "value": "August 31, 2017" },
+    "location": {
+      "label": "Location",
+      "value": "Toujounine, Administrative District, Mauritania"
+    },
+    "opened": {
+      "label": "Opening Date",
+      "value": "August 31, 2017"
+    },
     "license": {
       "label": "Official License",
       "value": "February 14, 2018",
@@ -41,6 +51,10 @@
     "authority": {
       "label": "Licensing Authority",
       "value": "Ministry of Islamic Affairs and Original Education – Directorate of Mahadras and Original Education"
+    },
+    "director": {
+      "label": "Director",
+      "value": "Sheikh Mohamed Abdellahi Abdat"
     }
   },
   "mission": {
@@ -102,21 +116,39 @@
       "division": "Youth/Cubs Division",
       "highlight": "Half of all qualifying spots",
       "winners": [
-        { "name": "Mohamed Mahmoud Ahmedou Bedou", "place": "1st Place" },
-        { "name": "Atah Mohamedou", "place": "3rd Place" },
-        { "name": "Mohamed Sedatt", "place": "5th Place" }
+        {
+          "name": "Mohamed Mahmoud Ahmedou Bedou",
+          "place": "1st Place"
+        },
+        {
+          "name": "Atah Mohamedou",
+          "place": "3rd Place"
+        },
+        {
+          "name": "Mohamed Sedatt",
+          "place": "5th Place"
+        }
       ]
     },
     "courses": {
       "title": "Specialized Courses",
       "desc": "Tajweed Didactic Poems",
-      "items": ["Tuhfat al-Atfal", "Al-Muqaddimah al-Jazariyya"]
+      "items": [
+        "Tuhfat al-Atfal",
+        "Al-Muqaddimah al-Jazariyya"
+      ]
     },
     "programs": {
       "title": "Recurring Programs",
       "items": [
-        { "name": "Ramadan Qur'an Contest", "tagline": "Race of the Hafiz" },
-        { "name": "Term Recognitions", "tagline": "A Station for Reflection and a Renewed Launch" }
+        {
+          "name": "Ramadan Qur'an Contest",
+          "tagline": "Race of the Hafiz"
+        },
+        {
+          "name": "Term Recognitions",
+          "tagline": "A Station for Reflection and a Renewed Launch"
+        }
       ]
     },
     "honors": {
@@ -132,7 +164,9 @@
     "view": "View photo",
     "close": "Close",
     "prev": "Previous photo",
-    "next": "Next photo"
+    "next": "Next photo",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out"
   },
   "photos": {
     "femaleGraduates": "Female graduates holding their Ijazah certificates",
@@ -158,5 +192,138 @@
   },
   "whatsapp": {
     "label": "Chat with us on WhatsApp"
+  },
+  "programs": {
+    "eyebrow": "Curriculum",
+    "title": "Our Programs",
+    "intro": "A structured path that takes every student from the very first letters to mastery of the Holy Qur'an and its sciences.",
+    "stage": "Stage",
+    "levelLabel": "For",
+    "cta": "Ask about this program",
+    "items": [
+      {
+        "title": "Foundational Literacy",
+        "subtitle": "Phonetic spelling stage (At-Tahajji)",
+        "desc": "Students build a solid foundation in reading and writing using structured phonetic spelling methods, eliminating reading and writing challenges from the very start.",
+        "points": [
+          "Arabic letters and their correct articulation",
+          "Structured phonetic spelling (Tahajji)",
+          "Fluent reading of the Qur'anic script"
+        ],
+        "level": "Beginners & children"
+      },
+      {
+        "title": "Qur'an Memorization (Hifz)",
+        "subtitle": "Memorization with Tajweed and performance",
+        "desc": "Proficient memorization of the Book of Allah paired with proper Tajweed rules and vocal execution, supported by a precise follow-up of every student's memorization and revision cycles.",
+        "points": [
+          "Memorization under a qualified teacher",
+          "Rigorous tracking of memorization and revision",
+          "Preparation for local, national and international competitions"
+        ],
+        "level": "All levels"
+      },
+      {
+        "title": "Classical Texts",
+        "subtitle": "Tajweed didactic poems",
+        "desc": "Study and memorization of the classical Tajweed poems relied upon by generations of reciters to master the rules of recitation.",
+        "points": [
+          "Tuhfat al-Atfal",
+          "Al-Muqaddimah al-Jazariyya",
+          "Explanation with practical application"
+        ],
+        "level": "Intermediate & advanced"
+      }
+    ]
+  },
+  "faculty": {
+    "eyebrow": "Leadership",
+    "title": "Leadership & Accreditation",
+    "director": {
+      "role": "Director & Sheikh of the Mahdara",
+      "name": "Sheikh Mohamed Abdellahi Abdat",
+      "bio": "Sheikh Mohamed Abdellahi Abdat is the official director of Mahdara Al-Andalous Al-Ilmiyya. He oversees its educational programs and the close follow-up of its students in memorizing the Holy Qur'an and studying its sciences."
+    },
+    "attestation": {
+      "badge": "Officially Licensed",
+      "country": "Islamic Republic of Mauritania",
+      "motto": "Honour – Fraternity – Justice",
+      "ministry": "Ministry of Islamic Affairs and Original Education",
+      "directorate": "Directorate of Mahadras and Original Education",
+      "title": "License Attestation",
+      "subtitle": "Translated summary",
+      "statement": "Mahdara Al-Andalous Al-Ilmiyya is officially licensed by the Ministry of Islamic Affairs and Original Education to teach the Holy Qur'an and Sharia sciences.",
+      "fields": {
+        "institution": "Institution",
+        "licenseNo": "License No.",
+        "licenseDate": "License Date",
+        "opened": "Opening Date",
+        "location": "Location",
+        "director": "Director"
+      },
+      "note": "Translated summary of the official license. The original Arabic document is available on request."
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Testimonials",
+    "title": "What Our Community Says",
+    "intro": "Join a community of more than 75 graduates and 95 certified memorizers of the Holy Qur'an.",
+    "graduates": "Graduates",
+    "memorizers": "Certified Memorizers",
+    "items": [
+      {
+        "quote": "My son started with the foundational spelling stage and today he recites with confidence and correct Tajweed. The follow-up from the teachers is remarkable.",
+        "name": "Ahmed O.",
+        "role": "Parent · Nouakchott"
+      },
+      {
+        "quote": "The Mahdara gave me more than memorization — it gave me discipline, confidence and a deep love for the Book of Allah.",
+        "name": "Mohamed S.",
+        "role": "Graduate · Certified memorizer"
+      },
+      {
+        "quote": "Studying online from abroad felt just like sitting in the circle. My teacher tracked every page of my revision.",
+        "name": "Aisha K.",
+        "role": "Online student · France"
+      },
+      {
+        "quote": "Studying Tuhfat al-Atfal and Al-Jazariyya here finally made the rules of Tajweed clear and practical for me.",
+        "name": "Yusuf A.",
+        "role": "Online student · United Kingdom"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Frequently Asked Questions",
+    "intro": "Everything international students usually ask before joining. Can't find your answer? Message us directly.",
+    "ctaTitle": "Still have questions?",
+    "cta": "Ask us on WhatsApp",
+    "items": [
+      {
+        "q": "How do online classes work?",
+        "a": "Online students study live with a qualified teacher. After you contact us on WhatsApp, we assess your level and goals and agree on a schedule that suits your time zone. Your teacher then follows your memorization and revision closely, just as with in-person students."
+      },
+      {
+        "q": "Are classes held via Zoom or WhatsApp?",
+        "a": "Yes. Lessons take place over live video calls, typically on Zoom or WhatsApp, depending on what works best for you. All you need is a stable internet connection and a device with a camera and microphone."
+      },
+      {
+        "q": "Do I need prior knowledge of Arabic?",
+        "a": "No. Beginners start with the Foundational Literacy stage, learning the Arabic letters and phonetic spelling (Tahajji) step by step before moving on to memorization. Contact us to discuss support in your language."
+      },
+      {
+        "q": "Can I study in person in Mauritania?",
+        "a": "Yes. The Mahdara is located in Toujounine, Administrative District, Mauritania. Contact us on WhatsApp to learn about in-person enrollment."
+      },
+      {
+        "q": "Is the Mahdara officially licensed?",
+        "a": "Yes. The Mahdara is licensed by the Ministry of Islamic Affairs and Original Education under License No. 000057, issued on February 14, 2018."
+      },
+      {
+        "q": "How do I register?",
+        "a": "Simply send us a message on WhatsApp. Our team will answer your questions and guide you through registration step by step."
+      }
+    ]
   }
 }
