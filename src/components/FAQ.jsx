@@ -46,7 +46,7 @@ export default function FAQ() {
 
   return (
     <Section id="faq" eyebrow={t('faq.eyebrow')} title={t('faq.title')}>
-      <div className="grid items-start gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:gap-10">
+      <div className="grid items-start gap-6 md:gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <Reveal className="glass rounded-3xl p-7 sm:p-8 lg:sticky lg:top-28">
           <IconBadge icon={MessageCircleQuestion} tone="accent" />
           <p className="mt-5 text-lg leading-relaxed text-slate-600 rtl:text-xl rtl:leading-loose">{t('faq.intro')}</p>

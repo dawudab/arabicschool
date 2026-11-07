@@ -1,3 +1,5 @@
+import React from 'react'
+import { useScrollReveal } from './hooks/useScrollReveal'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -5,6 +7,8 @@ import Faculty from './components/Faculty'
 import MissionVision from './components/MissionVision'
 import Objectives from './components/Objectives'
 import Programs from './components/Programs'
+import AcademicProgress from './components/AcademicProgress'
+import Methodology from './components/Methodology'
 import Activities from './components/Activities'
 import Achievements from './components/Achievements'
 import Testimonials from './components/Testimonials'
@@ -27,17 +31,26 @@ function Background() {
 }
 
 export default function App() {
+  useScrollReveal()
+
   return (
-    <div className="relative isolate min-h-dvh overflow-x-clip">
+    <div className="relative isolate min-h-dvh overflow-x-clip font-sans">
       <Background />
       <Navbar />
-      <main>
-        <Hero />
+      <Hero />
+
+      <main className="space-y-8 pb-12 md:space-y-12">
         <About />
         <Faculty />
         <MissionVision />
         <Objectives />
-        <Programs />
+
+        <section className="mx-auto max-w-6xl">
+          <Programs />
+          <AcademicProgress />
+        </section>
+
+        <Methodology />
         <Activities />
         <Achievements />
         <Testimonials />
@@ -45,6 +58,7 @@ export default function App() {
         <FAQ />
         <Contact />
       </main>
+
       <Footer />
       <WhatsAppButton />
     </div>

@@ -7,11 +7,12 @@ import { Logo, WhatsAppIcon } from './ui'
 
 function LanguageSwitcher({ full = false }) {
   const { t, i18n } = useTranslation()
+  const currentLang = i18n.language || i18n.resolvedLanguage
   return (
     <div role="group" aria-label={t('nav.language')} className="flex items-center gap-1 rounded-full border border-brand-600/15 bg-white/60 p-1">
       {!full && <Globe className="mx-1 size-4 text-brand-400" aria-hidden="true" />}
       {LANGUAGES.map((l) => {
-        const active = i18n.resolvedLanguage === l.code
+        const active = currentLang === l.code || currentLang?.startsWith(`${l.code}-`)
         return (
           <button
             key={l.code}
@@ -36,7 +37,7 @@ export default function Navbar() {
   const { t, i18n } = useTranslation()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const isAr = i18n.resolvedLanguage === 'ar'
+  const isAr = (i18n.language || i18n.resolvedLanguage) === 'ar'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16)

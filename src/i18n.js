@@ -41,10 +41,11 @@ i18n.use(initReactI18next).init({
   resources: { ar: { translation: ar }, en: { translation: en }, fr: { translation: fr } },
   lng: pathLang() ?? storedLang() ?? DEFAULT_LANG,
   supportedLngs: CODES,
-  // French is wired up but not yet translated: fall back to English, everything else to Arabic.
-  fallbackLng: { fr: ['en'], default: [DEFAULT_LANG] },
+  fallbackLng: DEFAULT_LANG,
   interpolation: { escapeValue: false },
 })
+
+syncDocument(i18n.language || DEFAULT_LANG)
 
 window.addEventListener('popstate', () => {
   const lng = pathLang()

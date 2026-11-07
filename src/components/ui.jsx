@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import { useInView } from '../hooks'
 import { NATIVE_NAME, photo } from '../constants'
 
 export function Photo({ name, className = '', eager = false }) {
@@ -18,12 +17,10 @@ export function Photo({ name, className = '', eager = false }) {
 }
 
 export function Reveal({ as: Tag = 'div', delay = 0, className = '', children, ...props }) {
-  const [ref, inView] = useInView()
   return (
     <Tag
-      ref={ref}
-      className={`reveal ${inView ? 'is-visible' : ''} ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
+      className={`reveal ${className}`}
+      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
       {...props}
     >
       {children}
@@ -33,9 +30,9 @@ export function Reveal({ as: Tag = 'div', delay = 0, className = '', children, .
 
 export function Section({ id, eyebrow, title, children, className = '' }) {
   return (
-    <section id={id} className={`relative px-4 py-20 sm:px-6 sm:py-24 lg:py-28 ${className}`}>
+    <section id={id} className={`relative px-4 py-12 sm:px-6 md:py-16 ${className}`}>
       <div className="mx-auto max-w-6xl">
-        <Reveal className="mb-12 text-center sm:mb-16">
+        <Reveal className="mb-10 text-center md:mb-12">
           {eyebrow && (
             <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-accent-600 uppercase rtl:tracking-normal">
               <span className="h-px w-6 bg-accent-400/70" />

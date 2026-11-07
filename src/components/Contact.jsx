@@ -6,7 +6,7 @@ import { Reveal, WhatsAppIcon } from './ui'
 export default function Contact() {
   const { t } = useTranslation()
   return (
-    <section id="contact" className="relative px-4 py-20 sm:px-6 sm:py-24">
+    <section id="contact" className="relative px-4 py-12 sm:px-6 md:py-16">
       <Reveal className="relative mx-auto max-w-5xl overflow-hidden rounded-[2rem] bg-gradient-to-br from-brand-500 via-brand-600 to-brand-800 px-6 py-12 text-center shadow-[0_24px_60px_-20px_rgba(44,89,157,0.6)] sm:px-12 sm:py-16">
         <div className="bg-geometric-light pointer-events-none absolute inset-0 opacity-[0.08]" aria-hidden="true" />
         <div className="pointer-events-none absolute -top-32 left-1/2 size-80 -translate-x-1/2 rounded-full bg-brand-300/40 blur-3xl" aria-hidden="true" />

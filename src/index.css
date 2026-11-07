@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-arabic: "Amiri", "Noto Naskh Arabic", serif;
   --font-display-ar: "Amiri", "Noto Naskh Arabic", serif;
   --font-body-ar: "Noto Naskh Arabic", "Amiri", serif;
 
@@ -106,13 +107,21 @@
 /* Scroll reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
 }
+
+.reveal.reveal-visible,
 .reveal.is-visible {
   opacity: 1;
-  transform: none;
+  transform: translateY(0);
 }
+
+/* Optional delay classes for staggered grid items */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

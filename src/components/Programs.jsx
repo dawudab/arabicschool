@@ -1,91 +1,146 @@
 import { useTranslation } from 'react-i18next'
-import { ArrowRight, BookOpenCheck, CheckCircle2, MonitorSmartphone, School, ScrollText, SpellCheck, Users } from 'lucide-react'
+import {
+  ArrowRight,
+  Award,
+  BookOpen,
+  BookOpenCheck,
+  GraduationCap,
+  Library,
+  MonitorSmartphone,
+  School,
+  ScrollText,
+  Sparkles,
+  SpellCheck,
+} from 'lucide-react'
 import { WHATSAPP_URL } from '../constants'
 import { IconBadge, Reveal, Section } from './ui'
 
-const ICONS = [SpellCheck, BookOpenCheck, ScrollText]
-const TONES = ['brand', 'accent', 'brand']
+const STAGE_ICONS = [
+  SpellCheck,
+  BookOpen,
+  BookOpenCheck,
+  Sparkles,
+  ScrollText,
+  Award,
+  Library,
+  GraduationCap,
+]
 
 export default function Programs() {
   const { t } = useTranslation()
-  const items = t('programs.items', { returnObjects: true })
+  const stages = t('programs.stages', { returnObjects: true })
 
   return (
     <Section id="programs" eyebrow={t('programs.eyebrow')} title={t('programs.title')}>
-      <Reveal className="mx-auto -mt-6 mb-12 max-w-2xl text-center text-lg text-slate-600 rtl:text-xl rtl:leading-loose">
+      <Reveal className="mx-auto -mt-4 mb-10 max-w-3xl text-center text-lg text-slate-600 rtl:text-xl rtl:leading-loose">
         {t('programs.intro')}
       </Reveal>
 
-      <ol className="grid gap-6 lg:grid-cols-3">
-        {Array.isArray(items) &&
-          items.map((p, i) => {
-            const featured = i === 1
-            return (
-              <Reveal
-                as="li"
-                key={i}
-                delay={i * 100}
-                className={`relative flex flex-col rounded-3xl p-7 transition duration-300 hover:-translate-y-1 sm:p-8 ${
-                  featured
-                    ? 'bg-gradient-to-br from-brand-600 to-brand-800 text-white shadow-[0_24px_50px_-20px_rgba(44,89,157,0.7)]'
-                    : 'glass hover:bg-white/75'
-                }`}
+      {/* 8 Study Stages */}
+      <div>
+        <Reveal className="mb-6 flex flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-start">
+          <div>
+            <h3 className="font-display text-2xl font-bold text-brand-800 sm:text-3xl">
+              {t('programs.stagesTitle')}
+            </h3>
+            <p className="mt-1 text-sm text-slate-600 sm:text-base rtl:text-lg">
+              {t('programs.stagesSubtitle')}
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            {[
+              [School, t('hero.inPerson')],
+              [MonitorSmartphone, t('hero.online')],
+            ].map(([Icon, label]) => (
+              <span
+                key={label}
+                className="inline-flex items-center gap-1.5 rounded-full border border-brand-600/15 bg-white/70 px-3.5 py-1.5 text-xs font-semibold text-brand-700 shadow-xs rtl:text-sm"
               >
-                <div className="flex items-start justify-between gap-4">
-                  {featured ? (
-                    <span className="inline-flex size-12 items-center justify-center rounded-2xl border border-white/25 bg-white/15 text-white">
-                      <BookOpenCheck className="size-6" strokeWidth={1.75} aria-hidden="true" />
-                    </span>
-                  ) : (
-                    <IconBadge icon={ICONS[i]} tone={TONES[i]} />
-                  )}
-                  <span className={`rounded-full px-3 py-1 text-xs font-bold tracking-wide ${featured ? 'bg-accent-400 text-brand-950' : 'bg-brand-600/10 text-brand-700'}`}>
-                    {t('programs.stage')} {i + 1}
-                  </span>
-                </div>
+                <Icon className="size-3.5 text-accent-500" aria-hidden="true" />
+                {label}
+              </span>
+            ))}
+          </div>
+        </Reveal>
 
-                <h3 className={`font-display mt-6 text-2xl font-bold ${featured ? 'text-white' : 'text-brand-800'}`}>{p.title}</h3>
-                <p className={`mt-1 text-sm font-semibold rtl:text-base ${featured ? 'text-accent-300' : 'text-accent-600'}`}>{p.subtitle}</p>
-                <p className={`mt-4 leading-relaxed rtl:text-lg rtl:leading-loose ${featured ? 'text-white/85' : 'text-slate-600'}`}>{p.desc}</p>
-
-                <ul className="mt-6 space-y-3">
-                  {p.points.map((point) => (
-                    <li key={point} className={`flex items-start gap-3 rtl:text-lg ${featured ? 'text-white' : 'text-brand-900'}`}>
-                      <CheckCircle2 className={`mt-0.5 size-5 shrink-0 ${featured ? 'text-accent-300' : 'text-accent-500'}`} aria-hidden="true" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-auto pt-7">
-                  <div className={`flex flex-wrap gap-2 border-t pt-5 text-xs font-medium ${featured ? 'border-white/15' : 'border-brand-600/10'}`}>
-                    {[
-                      [Users, `${t('programs.levelLabel')} ${p.level}`],
-                      [School, t('hero.inPerson')],
-                      [MonitorSmartphone, t('hero.online')],
-                    ].map(([Icon, label]) => (
-                      <span key={label} className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 rtl:text-sm ${featured ? 'bg-white/10 text-white' : 'bg-brand-50 text-brand-700'}`}>
-                        <Icon className="size-3.5" aria-hidden="true" />
-                        {label}
+        <ol className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {Array.isArray(stages) &&
+            stages.map((stage, i) => {
+              const Icon = STAGE_ICONS[i % STAGE_ICONS.length]
+              const isHighlighted = i === 5
+              return (
+                <Reveal
+                  as="li"
+                  key={i}
+                  delay={i * 60}
+                  className={`group relative flex flex-col overflow-hidden rounded-3xl p-6 transition duration-300 hover:-translate-y-1 ${
+                    isHighlighted
+                      ? 'bg-gradient-to-br from-brand-600 to-brand-800 text-white shadow-[0_20px_45px_-18px_rgba(44,89,157,0.65)]'
+                      : 'glass hover:border-accent-300 hover:bg-white/80'
+                  }`}
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    {isHighlighted ? (
+                      <span className="inline-flex size-12 items-center justify-center rounded-2xl border border-white/25 bg-white/15 text-white">
+                        <Icon className="size-6" strokeWidth={1.75} aria-hidden="true" />
                       </span>
-                    ))}
+                    ) : (
+                      <IconBadge icon={Icon} tone={i % 2 === 0 ? 'brand' : 'accent'} />
+                    )}
+                    <span
+                      className={`rounded-full px-3 py-1 text-xs font-bold tracking-wide ${
+                        isHighlighted
+                          ? 'bg-accent-400 text-brand-950'
+                          : 'bg-brand-600/10 text-brand-700'
+                      }`}
+                    >
+                      {t('programs.stage')} {String(i + 1).padStart(2, '0')}
+                    </span>
                   </div>
-                  <a
-                    href={WHATSAPP_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`group mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl px-5 py-3 font-semibold transition ${
-                      featured ? 'bg-white text-brand-700 hover:bg-accent-50' : 'border border-brand-600/15 bg-white/70 text-brand-700 hover:bg-white'
+
+                  <h4
+                    className={`font-display mt-5 text-xl font-bold ${
+                      isHighlighted ? 'text-white' : 'text-brand-800'
                     }`}
                   >
-                    {t('programs.cta')}
-                    <ArrowRight className="size-4 transition-transform group-hover:translate-x-1 rtl:-scale-x-100 rtl:group-hover:-translate-x-1" aria-hidden="true" />
-                  </a>
-                </div>
-              </Reveal>
-            )
-          })}
-      </ol>
+                    {stage.title}
+                  </h4>
+                  {stage.subtitle && (
+                    <p
+                      className={`mt-1 text-xs font-semibold tracking-wide ${
+                        isHighlighted ? 'text-accent-200' : 'text-accent-600'
+                      }`}
+                    >
+                      {stage.subtitle}
+                    </p>
+                  )}
+                  <p
+                    className={`mt-3 text-sm leading-relaxed rtl:text-base rtl:leading-relaxed ${
+                      isHighlighted ? 'text-white/85' : 'text-slate-600'
+                    }`}
+                  >
+                    {stage.desc}
+                  </p>
+                </Reveal>
+              )
+            })}
+        </ol>
+      </div>
+
+      <Reveal delay={150} className="mt-10 flex justify-center">
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center justify-center gap-2 rounded-2xl bg-brand-600 px-7 py-4 font-semibold text-white shadow-lg shadow-brand-600/25 transition hover:bg-brand-700"
+        >
+          {t('programs.cta')}
+          <ArrowRight
+            className="size-4 transition-transform group-hover:translate-x-1 rtl:-scale-x-100 rtl:group-hover:-translate-x-1"
+            aria-hidden="true"
+          />
+        </a>
+      </Reveal>
     </Section>
   )
 }

@@ -1,1 +1,445 @@
-{}
+{
+  "meta": {
+    "title": "Mahdara Al-Andalous Al-Ilmiyya | Mémorisation du Coran & Sciences de la Charia",
+    "description": "Mahdara Al-Andalous Al-Ilmiyya — connecter les étudiants du monde entier à un enseignement coranique authentique, en présentiel et en ligne."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "mission": "Mission & Vision",
+    "objectives": "Objectifs",
+    "programs": "Programmes",
+    "methodology": "Méthodologie",
+    "activities": "Activités",
+    "achievements": "Réalisations",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue",
+    "faculty": "Direction",
+    "testimonials": "Témoignages",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "badge": "École Coranique Agréée · Mauritanie",
+    "title": "Mahdara Al-Andalous Al-Ilmiyya",
+    "titleSuffix": "pour la Mémorisation du Coran et les Sciences de la Charia",
+    "subtitle": "Connecter les étudiants du monde entier à une éducation coranique authentique, en présentiel et en ligne.",
+    "ctaPrimary": "S'inscrire via WhatsApp",
+    "ctaSecondary": "Nous contacter",
+    "inPerson": "En présentiel",
+    "online": "En ligne",
+    "since": "Depuis 2017"
+  },
+  "about": {
+    "eyebrow": "À propos de la Mahdara",
+    "title": "Un foyer établi pour l'enseignement du Saint Coran",
+    "location": {
+      "label": "Emplacement",
+      "value": "Toujounine, Quartier Administratif, Mauritanie"
+    },
+    "opened": {
+      "label": "Date d'ouverture",
+      "value": "31 août 2017"
+    },
+    "license": {
+      "label": "Agrément officiel",
+      "value": "14 février 2018",
+      "numberLabel": "Numéro d'agrément",
+      "number": "000057"
+    },
+    "authority": {
+      "label": "Autorité de délivrance",
+      "value": "Ministère des Affaires Islamiques et de l'Enseignement Originel – Direction des Mahadras et de l'Enseignement Originel"
+    },
+    "director": {
+      "label": "Directeur",
+      "value": "Cheikh Mohamed Abdellahi Abdat"
+    }
+  },
+  "mission": {
+    "eyebrow": "Notre Vocation",
+    "title": "Mission & Vision",
+    "missionLabel": "Mission",
+    "missionText": "Fournir une éducation coranique authentique et distinguée grâce à une approche scientifique organisée combinant mémorisation, révision, Tajweed, Qira'at et sciences islamiques fondamentales.",
+    "visionLabel": "Vision",
+    "visionText": "Leadership dans l'enseignement du Saint Coran et de ses sciences, préparant une génération qui maîtrise le Livre d'Allah, adhère aux valeurs islamiques et est qualifiée pour servir le Coran."
+  },
+  "objectives": {
+    "eyebrow": "Nos Ambitions",
+    "title": "Objectifs",
+    "summary": "Permettre la mémorisation complète du Coran, maîtriser la récitation avec le Tajweed, qualifier les étudiants pour l'Ijazah, enseigner les Qira'at, développer les aptitudes académiques, préparer des enseignants qualifiés et intégrer l'éthique coranique.",
+    "items": [
+      {
+        "title": "Permettre la mémorisation complète du Coran",
+        "desc": "Accompagner les étudiants vers la mémorisation intégrale et solide du Livre d'Allah selon un programme structuré."
+      },
+      {
+        "title": "Maîtriser la récitation avec le Tajweed",
+        "desc": "Perfectionner l'articulation des lettres et l'application théorique et pratique des règles du Tajweed."
+      },
+      {
+        "title": "Qualifier les étudiants pour l'Ijazah",
+        "desc": "Préparer les mémorisateurs maîtrisant le texte à l'obtention de l'Ijazah avec chaîne de transmission continue."
+      },
+      {
+        "title": "Enseigner les Qira'at",
+        "desc": "Transmettre les fondements et les règles des différentes lectures coraniques authentiques."
+      },
+      {
+        "title": "Ancrer la compréhension correcte",
+        "desc": "Relier la mémorisation à la méditation et à la bonne compréhension des sens du Coran et de la Charia."
+      },
+      {
+        "title": "Développer les aptitudes académiques",
+        "desc": "Cultiver l'excellence scientifique à travers l'étude des textes classiques et des fondements."
+      },
+      {
+        "title": "Préparer des enseignants qualifiés",
+        "desc": "Former des récitateurs et des instructeurs compétents sur les plans scientifique et pédagogique."
+      },
+      {
+        "title": "Intégrer l'éthique coranique",
+        "desc": "Inculquer les valeurs islamiques, le noble comportement et la bienséance inspirés du Saint Coran."
+      }
+    ]
+  },
+  "programs": {
+    "eyebrow": "Programme & Cursus",
+    "title": "Étapes d'Études & Structure Académique",
+    "intro": "Un parcours progressif en 8 étapes et une structure académique par Hizbs accompagnant chaque étudiant des premières lettres jusqu'à l'Ijazah et l'enseignement.",
+    "stage": "Étape",
+    "stagesTitle": "Les 8 Étapes d'Études",
+    "stagesSubtitle": "Un cursus complet de la fondation phonétique à la qualification des enseignants",
+    "levelsTitle": "Structure Académique",
+    "levelsSubtitle": "Niveaux académiques organisés selon le nombre de Hizbs mémorisés",
+    "levelBadge": "Niveau",
+    "cta": "Se renseigner via WhatsApp",
+    "stages": [
+      {
+        "title": "Fondation et Orthographe",
+        "subtitle": "التأسيس والتهجي",
+        "desc": "Lettres, phonétique et lecture correcte."
+      },
+      {
+        "title": "Mémorisation Primaire",
+        "subtitle": "الحفظ الابتدائي",
+        "desc": "Mémorisation des premières parties avec révision."
+      },
+      {
+        "title": "Achèvement",
+        "subtitle": "إتمام الحفظ",
+        "desc": "Mémorisation complète du Saint Coran."
+      },
+      {
+        "title": "Maîtrise et Révision",
+        "subtitle": "الإتقان والمراجعة",
+        "desc": "Consolidation de la mémorisation et correction de la récitation."
+      },
+      {
+        "title": "Tajweed et Qualification",
+        "subtitle": "التجويد والتأهيل",
+        "desc": "Règles théoriques et pratiques."
+      },
+      {
+        "title": "Département d'Ijazah",
+        "subtitle": "قسم الإجازة",
+        "desc": "Réception directe et certification avec une chaîne continue."
+      },
+      {
+        "title": "Département des Qira'at",
+        "subtitle": "قسم القراءات",
+        "desc": "Étude des fondements des différentes lectures."
+      },
+      {
+        "title": "Qualification des Enseignants",
+        "subtitle": "التأهيل التعليمي",
+        "desc": "Préparation des récitateurs et des instructeurs."
+      }
+    ],
+    "levels": [
+      {
+        "level": "Niveau 1",
+        "range": "De 10 à 20 Hizbs",
+        "desc": "Construction des premières bases de mémorisation avec lecture correcte et règles fondamentales de Tajweed."
+      },
+      {
+        "level": "Niveau 2",
+        "range": "De 20 à 40 Hizbs",
+        "desc": "Élargissement de la mémorisation accompagné d'un programme de révision régulier pour consolider les acquis."
+      },
+      {
+        "level": "Niveau 3",
+        "range": "De 40 à 60 Hizbs",
+        "desc": "Achèvement des 60 Hizbs du Saint Coran avec un accent particulier sur la maîtrise et la fluidité."
+      },
+      {
+        "level": "Niveau 4",
+        "range": "Département d'Ijazah et Textes Classiques",
+        "desc": "Récitation pour l'Ijazah à chaîne continue associée à l'étude des textes scientifiques classiques."
+      }
+    ]
+  },
+  "academic_structure": "Structure Académique",
+  "levels": {
+    "1": {
+      "title": "Niveau 1",
+      "hizbs": "10 - 20 Hizbs",
+      "desc": "Fondation et mémorisation initiale avec règles de base du Tajweed."
+    },
+    "2": {
+      "title": "Niveau 2",
+      "hizbs": "20 - 40 Hizbs",
+      "desc": "Mémorisation intermédiaire et programme de révision structuré."
+    },
+    "3": {
+      "title": "Niveau 3",
+      "hizbs": "40 - 60 Hizbs",
+      "desc": "Achèvement de la mémorisation complète du Saint Coran."
+    },
+    "4": {
+      "title": "Ijazah & Textes Classiques",
+      "hizbs": "Parcours Ijazah",
+      "desc": "Maîtrise, chaîne de transmission continue et textes classiques."
+    }
+  },
+  "methodology": {
+    "eyebrow": "Pédagogie & Évaluation",
+    "title": "Méthodologie Éducative",
+    "intro": "Un système éducatif structuré alliant transmission orale authentique, enseignement pluridisciplinaire et suivi rigoureux de la progression.",
+    "subjects": {
+      "title": "Matières Principales",
+      "summary": "Sciences Coraniques (Mémorisation, Révision, Tajweed), Sciences de la Charia (Aqidah, Fiqh, Hadith, Tafsir), et Sciences de l'Éducation (Éthique, Compétences d'enseignement).",
+      "categories": [
+        {
+          "name": "Sciences Coraniques",
+          "items": ["Mémorisation", "Révision", "Tajweed", "Qira'at"]
+        },
+        {
+          "name": "Sciences de la Charia",
+          "items": ["Aqidah", "Fiqh", "Hadith", "Tafsir", "Langue Arabe"]
+        },
+        {
+          "name": "Sciences de l'Éducation",
+          "items": ["Éthique", "Compétences d'enseignement", "Planification"]
+        }
+      ]
+    },
+    "methods": {
+      "title": "Méthodes d'Enseignement",
+      "summary": "Réception orale directe, répétition continue, correction de la récitation, révision structurée et équilibre entre le rythme individuel et les sessions de groupe.",
+      "items": [
+        "Réception orale directe",
+        "Répétition continue",
+        "Correction de la récitation",
+        "Révision quotidienne et hebdomadaire structurée",
+        "Équilibre entre rythme individuel et sessions de groupe"
+      ]
+    },
+    "evaluation": {
+      "title": "Système d'Évaluation",
+      "summary": "Suivi quotidien, tests hebdomadaires, rapports mensuels, évaluations trimestrielles, examens annuels et validation rigoureuse de l'Ijazah.",
+      "items": [
+        "Suivi quotidien",
+        "Tests hebdomadaires",
+        "Rapports mensuels",
+        "Évaluations trimestrielles",
+        "Examens annuels",
+        "Validation rigoureuse de l'Ijazah"
+      ]
+    }
+  },
+  "activities": {
+    "eyebrow": "Au-delà de la Classe",
+    "title": "Activités Éducatives",
+    "intro": "L'institution accorde une attention particulière aux activités parascolaires afin de :",
+    "items": [
+      "Relier les connaissances théoriques à la pratique concrète.",
+      "Développer l'esprit critique, la confiance en soi et le sens des responsabilités.",
+      "Inculquer les valeurs islamiques authentiques et l'excellence morale."
+    ],
+    "photoCaption": "Joie partagée entre les enseignants et les étudiants"
+  },
+  "achievements": {
+    "eyebrow": "Jalons Marquants",
+    "title": "Réalisations & Programmes",
+    "stats": {
+      "memorizers": "Mémorisateurs Certifiés",
+      "graduates": "Total des Diplômés"
+    },
+    "competition": {
+      "year": "2020",
+      "title": "Résultats du Concours National",
+      "desc": "La Mahdara a remporté la moitié des places qualificatives pour le Concours International.",
+      "division": "Catégorie Jeunes / Cadets",
+      "highlight": "La moitié des places qualificatives",
+      "winners": [
+        {
+          "name": "Mohamed Mahmoud Ahmedou Bedou",
+          "place": "1ère Place"
+        },
+        {
+          "name": "Atah Mohamedou",
+          "place": "3ème Place"
+        },
+        {
+          "name": "Mohamed Sedatt",
+          "place": "5ème Place"
+        }
+      ]
+    },
+    "courses": {
+      "title": "Cours Spécialisés",
+      "desc": "Poèmes didactiques de Tajweed",
+      "items": [
+        "Tuhfat al-Atfal",
+        "Al-Muqaddimah al-Jazariyya"
+      ]
+    },
+    "programs": {
+      "title": "Programmes Périodiques",
+      "items": [
+        {
+          "name": "Concours Coranique du Ramadan",
+          "tagline": "La Course des Mémorisateurs"
+        },
+        {
+          "name": "Distinctions Trimestrielles",
+          "tagline": "Une étape de réflexion et un nouvel élan"
+        }
+      ]
+    },
+    "honors": {
+      "title": "Hommage à Nos Mémorisateurs",
+      "desc": "Certificats d'honneur remis à la 6ème promotion de mémorisateurs (Hafiz)"
+    }
+  },
+  "gallery": {
+    "eyebrow": "Moments de Fierté",
+    "title": "Cérémonie de Remise des Diplômes",
+    "desc": "Remise des diplômes de la 5ème promotion d'Ijazah et de la 6ème promotion de mémorisateurs",
+    "date": "29 juillet 2026",
+    "view": "Voir la photo",
+    "close": "Fermer",
+    "prev": "Photo précédente",
+    "next": "Photo suivante",
+    "zoomIn": "Zoomer",
+    "zoomOut": "Dézoomer"
+  },
+  "photos": {
+    "femaleGraduates": "Diplômées portant leurs certificats d'Ijazah",
+    "studentsCertificates": "Étudiants diplômés portant fièrement leurs certificats",
+    "teachersGraduates": "Enseignants et diplômés lors de la cérémonie de remise des diplômes",
+    "ijazahRecipient": "Une diplômée présentant son Ijazah dans la lecture de l'Imam Nafi'",
+    "celebration": "Un enseignant et un diplômé célébrant ensemble",
+    "teacherStudent": "Un enseignant honorant un jeune mémorisateur",
+    "nafiIjazah": "Un diplômé recevant son Ijazah dans la lecture de l'Imam Nafi'",
+    "honorCertificate1": "Un mémorisateur recevant son certificat d'honneur",
+    "honorCertificate2": "Un moment de fierté lors de la distinction d'un mémorisateur",
+    "youngHafiz": "Un jeune mémorisateur avec son certificat d'honneur"
+  },
+  "contact": {
+    "title": "Commencez votre parcours avec le Saint Coran",
+    "desc": "Que vous nous rejoigniez en présentiel en Mauritanie ou en ligne depuis n'importe où dans le monde, notre équipe est prête à répondre à vos questions sur WhatsApp.",
+    "cta": "S'inscrire via WhatsApp",
+    "phoneLabel": "WhatsApp"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "license": "Agrément N° 000057"
+  },
+  "whatsapp": {
+    "label": "Discutez avec nous sur WhatsApp"
+  },
+  "faculty": {
+    "eyebrow": "Direction",
+    "title": "Direction & Agrément Officiel",
+    "director": {
+      "role": "Directeur & Cheikh de la Mahdara",
+      "name": "Cheikh Mohamed Abdellahi Abdat",
+      "bio": "Cheikh Mohamed Abdellahi Abdat est le directeur officiel de la Mahdara Al-Andalous Al-Ilmiyya. Il supervise ses programmes éducatifs ainsi que le suivi rigoureux des étudiants dans la mémorisation du Saint Coran et l'étude de ses sciences."
+    },
+    "attestation": {
+      "badge": "Agréée Officiellement",
+      "country": "République Islamique de Mauritanie",
+      "motto": "Honneur – Fraternité – Justice",
+      "ministry": "Ministère des Affaires Islamiques et de l'Enseignement Originel",
+      "directorate": "Direction des Mahadras et de l'Enseignement Originel",
+      "title": "Attestation d'Agrément",
+      "subtitle": "Résumé traduit de l'agrément",
+      "statement": "La Mahdara Al-Andalous Al-Ilmiyya est officiellement agréée par le Ministère des Affaires Islamiques et de l'Enseignement Originel pour l'enseignement du Saint Coran et des sciences de la Charia.",
+      "fields": {
+        "institution": "Institution",
+        "licenseNo": "N° d'Agrément",
+        "licenseDate": "Date d'Agrément",
+        "opened": "Date d'Ouverture",
+        "location": "Emplacement",
+        "director": "Directeur"
+      },
+      "note": "Résumé traduit de l'agrément officiel. Le document original en arabe est disponible sur demande."
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Témoignages",
+    "title": "Ce que dit notre communauté",
+    "intro": "Rejoignez une communauté de plus de 75 diplômés et 95 mémorisateurs certifiés du Saint Coran.",
+    "graduates": "Diplômés",
+    "memorizers": "Mémorisateurs Certifiés",
+    "items": [
+      {
+        "quote": "Mon fils a commencé par l'étape d'orthographe phonétique et aujourd'hui il récite avec assurance et un Tajweed correct. Le suivi des enseignants est remarquable.",
+        "name": "Ahmed O.",
+        "role": "Parent d'élève · Nouakchott"
+      },
+      {
+        "quote": "La Mahdara m'a apporté bien plus que la mémorisation : elle m'a transmis la discipline, la confiance et un amour profond pour le Livre d'Allah.",
+        "name": "Mohamed S.",
+        "role": "Diplômé · Mémorisateur certifié"
+      },
+      {
+        "quote": "Étudier en ligne depuis l'étranger donnait l'impression d'être assise dans le cercle d'étude. Mon enseignant suivait chaque page de ma révision.",
+        "name": "Aisha K.",
+        "role": "Étudiante en ligne · France"
+      },
+      {
+        "quote": "L'étude de Tuhfat al-Atfal et d'Al-Jazariyya ici a enfin rendu les règles du Tajweed claires et pratiques pour moi.",
+        "name": "Yusuf A.",
+        "role": "Étudiant en ligne · Royaume-Uni"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Questions Fréquentes",
+    "intro": "Tout ce que les étudiants internationaux demandent habituellement avant de s'inscrire. Vous ne trouvez pas votre réponse ? Écrivez-nous directement.",
+    "ctaTitle": "Vous avez d'autres questions ?",
+    "cta": "Posez-les sur WhatsApp",
+    "items": [
+      {
+        "q": "Comment fonctionnent les cours en ligne ?",
+        "a": "Les étudiants en ligne étudient en direct avec un enseignant qualifié. Après nous avoir contactés sur WhatsApp, nous évaluons votre niveau et vos objectifs et convenons d'un horaire adapté à votre fuseau horaire. Votre enseignant suit ensuite votre mémorisation et votre révision de près, tout comme pour les étudiants en présentiel."
+      },
+      {
+        "q": "Les cours ont-ils lieu via Zoom ou WhatsApp ?",
+        "a": "Oui. Les cours se déroulent par appels vidéo en direct, généralement sur Zoom ou WhatsApp selon votre préférence. Tout ce dont vous avez besoin est une connexion Internet stable et un appareil équipé d'une caméra et d'un microphone."
+      },
+      {
+        "q": "Ai-je besoin de connaissances préalables en arabe ?",
+        "a": "Non. Les débutants commencent par l'étape de Fondation et Orthographe, apprenant les lettres arabes et l'épellation phonétique (Tahajji) étape par étape avant de passer à la mémorisation. Contactez-nous pour discuter d'un accompagnement dans votre langue."
+      },
+      {
+        "q": "Puis-je étudier en présentiel en Mauritanie ?",
+        "a": "Oui. La Mahdara est située à Toujounine, Quartier Administratif, Mauritanie. Contactez-nous sur WhatsApp pour connaître les modalités d'inscription en présentiel."
+      },
+      {
+        "q": "La Mahdara est-elle officiellement agréée ?",
+        "a": "Oui. La Mahdara est agréée par le Ministère des Affaires Islamiques et de l'Enseignement Originel sous le numéro d'agrément 000057, délivré le 14 février 2018."
+      },
+      {
+        "q": "Comment puis-je m'inscrire ?",
+        "a": "Envoyez-nous simplement un message sur WhatsApp. Notre équipe répondra à vos questions et vous guidera étape par étape dans votre inscription."
+      }
+    ]
+  }
+}

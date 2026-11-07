@@ -9,8 +9,8 @@ export default function Hero() {
   const isAr = i18n.resolvedLanguage === 'ar'
 
   return (
-    <section id="home" className="relative px-4 pt-12 pb-20 sm:px-6 sm:pt-20 lg:pt-24 lg:pb-28">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.25fr_1fr]">
+    <section id="home" className="relative flex min-h-[75vh] items-center px-4 py-12 sm:px-6 md:py-16">
+      <div className="mx-auto grid max-w-6xl items-center gap-6 md:gap-8 lg:grid-cols-[1.25fr_1fr]">
         <div className="text-center lg:text-start">
           <Reveal>
             <span className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium text-brand-700 sm:text-sm">

@@ -8,6 +8,8 @@
     "about": "About",
     "mission": "Mission & Vision",
     "objectives": "Objectives",
+    "programs": "Programs",
+    "methodology": "Methodology",
     "activities": "Activities",
     "achievements": "Achievements",
     "gallery": "Gallery",
@@ -15,7 +17,6 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "language": "Language",
-    "programs": "Programs",
     "faculty": "Leadership",
     "testimonials": "Testimonials",
     "faq": "FAQ"
@@ -61,35 +62,193 @@
     "eyebrow": "Our Purpose",
     "title": "Mission & Vision",
     "missionLabel": "Mission",
-    "missionText": "A model modern mahdara that strives through distinguished programs to graduate skilled, proficient reciters who excel in the Holy Qur'an and its sciences.",
+    "missionText": "Providing authentic and distinguished Qur'anic education through an organized scientific and educational approach that combines memorization, revision, Tajweed, Qira'at, and foundational Islamic sciences, while nurturing the student's character.",
     "visionLabel": "Vision",
-    "visionText": "To serve as an illuminating beacon of knowledge for teaching the Holy Qur'an and its associated disciplines."
+    "visionText": "Leadership in teaching the Holy Qur'an and its sciences, preparing a generation that masters the Book of Allah, adheres to Islamic values, and is academically and educationally qualified to serve the Qur'an."
   },
   "objectives": {
     "eyebrow": "What We Strive For",
     "title": "Objectives",
+    "summary": "Enable complete memorization of the Qur'an, master recitation with Tajweed, qualify students for connected-chain Ijazah, teach Qur'anic Qira'at, instill proper understanding, develop academic aptitude, prepare qualified teachers, and embed Qur'anic ethics.",
     "items": [
       {
-        "title": "Precision in Memorization",
-        "desc": "Ensuring proficient memorization of the Book of Allah paired with proper Tajweed rules and vocal execution."
+        "title": "Enable Complete Memorization of the Qur'an",
+        "desc": "Guiding students to memorize the entire Book of Allah with precision, retention, and structured milestones."
       },
       {
-        "title": "Rigorous Tracking",
-        "desc": "Implementing a precise follow-up and monitoring mechanism for students' memorization and revision cycles."
+        "title": "Master Recitation with Tajweed",
+        "desc": "Perfecting phonetic articulation and applying both theoretical and practical rules of Tajweed."
       },
       {
-        "title": "Foundational Literacy",
-        "desc": "Eliminating reading and writing challenges at the foundational stage using structured phonetic spelling methods."
+        "title": "Qualify Students for Connected-Chain Ijazah",
+        "desc": "Preparing proficient memorizers for direct oral certification with an unbroken chain of transmission."
       },
       {
-        "title": "Talent Incubation",
-        "desc": "Discovering and actively developing student talents."
+        "title": "Teach Qur'anic Qira'at",
+        "desc": "Instructing students in the foundational principles and variations of authentic Qur'anic recitations."
       },
       {
-        "title": "Competition Readiness",
-        "desc": "Qualifying students to compete in local, national, and international Qur'anic competitions."
+        "title": "Instill Proper Understanding",
+        "desc": "Connecting memorization with sound comprehension of Qur'anic meanings and Sharia sciences."
+      },
+      {
+        "title": "Develop Academic Aptitude",
+        "desc": "Building strong scholarly foundations through classical texts and disciplined study."
+      },
+      {
+        "title": "Prepare Qualified Teachers",
+        "desc": "Training and certifying skilled reciters and instructors capable of leading Qur'anic circles."
+      },
+      {
+        "title": "Embed Qur'anic Ethics",
+        "desc": "Nurturing Islamic manners, noble character, and spiritual devotion inspired by the Holy Qur'an."
       }
     ]
+  },
+  "programs": {
+    "eyebrow": "Curriculum & Structure",
+    "title": "Study Stages & Academic Structure",
+    "intro": "A comprehensive 8-stage progression and Hizb-based academic structure guiding every student from foundational letters to Ijazah and teaching certification.",
+    "stage": "Stage",
+    "stagesTitle": "8 Study Stages",
+    "stagesSubtitle": "A structured progression from foundational phonetics to teacher qualification",
+    "levelsTitle": "Academic Structure",
+    "levelsSubtitle": "Academic levels organized by Hizb count and advanced specialization",
+    "levelBadge": "Level",
+    "cta": "Inquire via WhatsApp",
+    "stages": [
+      {
+        "title": "Foundation & Spelling",
+        "subtitle": "التأسيس والتهجي",
+        "desc": "Letters, phonetics, and correct reading."
+      },
+      {
+        "title": "Primary Memorization",
+        "subtitle": "الحفظ الابتدائي",
+        "desc": "Memorizing the first parts with revision."
+      },
+      {
+        "title": "Completion",
+        "subtitle": "إتمام الحفظ",
+        "desc": "Memorizing the entire Holy Qur'an."
+      },
+      {
+        "title": "Mastery & Revision",
+        "subtitle": "الإتقان والمراجعة",
+        "desc": "Solidifying memorization and correcting recitation."
+      },
+      {
+        "title": "Tajweed",
+        "subtitle": "التجويد والتأهيل",
+        "desc": "Theoretical and practical rules."
+      },
+      {
+        "title": "Ijazah",
+        "subtitle": "قسم الإجازة",
+        "desc": "Direct reception and certification with a connected chain."
+      },
+      {
+        "title": "Qira'at",
+        "subtitle": "قسم القراءات",
+        "desc": "Studying the foundations of different recitations."
+      },
+      {
+        "title": "Teacher Qualification",
+        "subtitle": "التأهيل التعليمي",
+        "desc": "Preparing reciters and instructors."
+      }
+    ],
+    "levels": [
+      {
+        "level": "Level 1",
+        "range": "10 to 20 Hizbs",
+        "desc": "Building the initial memorization foundation with accurate reading and essential Tajweed rules."
+      },
+      {
+        "level": "Level 2",
+        "range": "20 to 40 Hizbs",
+        "desc": "Expanding memorization capacity alongside systematic revision cycles to ensure strong retention."
+      },
+      {
+        "level": "Level 3",
+        "range": "40 to 60 Hizbs",
+        "desc": "Completing the full 60 Hizbs of the Holy Qur'an with deep focus on mastery and fluency."
+      },
+      {
+        "level": "Level 4",
+        "range": "Ijazah & Classical Texts",
+        "desc": "Connected-chain Ijazah recitation paired with mastery of foundational classical texts."
+      }
+    ]
+  },
+  "academic_structure": "Academic Structure",
+  "levels": {
+    "1": {
+      "title": "Level 1",
+      "hizbs": "10 - 20 Hizbs",
+      "desc": "Foundation and initial memorization."
+    },
+    "2": {
+      "title": "Level 2",
+      "hizbs": "20 - 40 Hizbs",
+      "desc": "Intermediate memorization and revision."
+    },
+    "3": {
+      "title": "Level 3",
+      "hizbs": "40 - 60 Hizbs",
+      "desc": "Completion of the entire Holy Qur'an."
+    },
+    "4": {
+      "title": "Ijazah & Texts",
+      "hizbs": "Ijazah Track",
+      "desc": "Mastery, connected chain, and classical texts."
+    }
+  },
+  "methodology": {
+    "eyebrow": "Pedagogy & Assessment",
+    "title": "Educational Methodology",
+    "intro": "An integrated educational system combining traditional oral transmission with structured curriculum subjects, personalized pacing, and continuous evaluation.",
+    "subjects": {
+      "title": "Core Subjects",
+      "summary": "Qur'anic Sciences (Memorization, Revision, Tajweed, Qira'at), Sharia Sciences (Aqidah, Fiqh, Hadith, Tafsir, Arabic), and Educational Sciences (Ethics, Teaching Skills, Planning).",
+      "categories": [
+        {
+          "name": "Qur'anic Sciences",
+          "items": ["Memorization", "Revision", "Tajweed", "Qira'at"]
+        },
+        {
+          "name": "Sharia Sciences",
+          "items": ["Aqidah", "Fiqh", "Hadith", "Tafsir", "Arabic"]
+        },
+        {
+          "name": "Educational Sciences",
+          "items": ["Ethics", "Teaching Skills", "Planning"]
+        }
+      ]
+    },
+    "methods": {
+      "title": "Teaching Methods",
+      "summary": "Direct oral reception, continuous repetition, recitation correction, structured daily/weekly revision, balancing individual pacing with group sessions.",
+      "items": [
+        "Direct oral reception",
+        "Continuous repetition",
+        "Recitation correction",
+        "Structured daily/weekly revision",
+        "Balancing individual pacing with group sessions"
+      ]
+    },
+    "evaluation": {
+      "title": "Evaluation System",
+      "summary": "Daily tracking, weekly proficiency tests, monthly progress reports, term evaluations, annual transition exams, and rigorous Ijazah validation.",
+      "items": [
+        "Daily tracking",
+        "Weekly proficiency tests",
+        "Monthly progress reports",
+        "Term evaluations",
+        "Annual transition exams",
+        "Rigorous Ijazah validation"
+      ]
+    }
   },
   "activities": {
     "eyebrow": "Beyond the Classroom",
@@ -192,49 +351,6 @@
   },
   "whatsapp": {
     "label": "Chat with us on WhatsApp"
-  },
-  "programs": {
-    "eyebrow": "Curriculum",
-    "title": "Our Programs",
-    "intro": "A structured path that takes every student from the very first letters to mastery of the Holy Qur'an and its sciences.",
-    "stage": "Stage",
-    "levelLabel": "For",
-    "cta": "Ask about this program",
-    "items": [
-      {
-        "title": "Foundational Literacy",
-        "subtitle": "Phonetic spelling stage (At-Tahajji)",
-        "desc": "Students build a solid foundation in reading and writing using structured phonetic spelling methods, eliminating reading and writing challenges from the very start.",
-        "points": [
-          "Arabic letters and their correct articulation",
-          "Structured phonetic spelling (Tahajji)",
-          "Fluent reading of the Qur'anic script"
-        ],
-        "level": "Beginners & children"
-      },
-      {
-        "title": "Qur'an Memorization (Hifz)",
-        "subtitle": "Memorization with Tajweed and performance",
-        "desc": "Proficient memorization of the Book of Allah paired with proper Tajweed rules and vocal execution, supported by a precise follow-up of every student's memorization and revision cycles.",
-        "points": [
-          "Memorization under a qualified teacher",
-          "Rigorous tracking of memorization and revision",
-          "Preparation for local, national and international competitions"
-        ],
-        "level": "All levels"
-      },
-      {
-        "title": "Classical Texts",
-        "subtitle": "Tajweed didactic poems",
-        "desc": "Study and memorization of the classical Tajweed poems relied upon by generations of reciters to master the rules of recitation.",
-        "points": [
-          "Tuhfat al-Atfal",
-          "Al-Muqaddimah al-Jazariyya",
-          "Explanation with practical application"
-        ],
-        "level": "Intermediate & advanced"
-      }
-    ]
   },
   "faculty": {
     "eyebrow": "Leadership",

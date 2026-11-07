@@ -5,7 +5,7 @@ export const LATIN_NAME = 'Mahdara Al-Andalous Al-Ilmiyya'
 
 export const NAV_ITEMS = ['about', 'programs', 'faculty', 'achievements', 'gallery', 'faq', 'contact']
 export const FOOTER_NAV = [
-  'about', 'faculty', 'mission', 'objectives', 'programs', 'activities',
+  'about', 'faculty', 'mission', 'objectives', 'programs', 'methodology', 'activities',
   'achievements', 'testimonials', 'gallery', 'faq', 'contact',
 ]
 
