@@ -1,0 +1,8 @@
+{
+  "name": "Mahdara Al-Andalous",
+  "description": "محظرة الأندلس العلمية لتحفيظ القرآن والعلوم الشرعية - ربط الطلاب حول العالم بتعليم قرآني أصيل، حضورياً وعن بُعد.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
