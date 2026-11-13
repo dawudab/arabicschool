@@ -1,37 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Menu, X, Globe } from 'lucide-react'
-import { LANGUAGES } from '../i18n'
+import { Menu, X } from 'lucide-react'
 import { NAV_ITEMS, WHATSAPP_URL, NATIVE_NAME, LATIN_NAME } from '../constants'
 import { Logo, WhatsAppIcon } from './ui'
-
-function LanguageSwitcher({ full = false }) {
-  const { t, i18n } = useTranslation()
-  const currentLang = i18n.language || i18n.resolvedLanguage
-  return (
-    <div role="group" aria-label={t('nav.language')} className="flex items-center gap-1 rounded-full border border-brand-600/15 bg-white/60 p-1">
-      {!full && <Globe className="mx-1 size-4 text-brand-400" aria-hidden="true" />}
-      {LANGUAGES.map((l) => {
-        const active = currentLang === l.code || currentLang?.startsWith(`${l.code}-`)
-        return (
-          <button
-            key={l.code}
-            type="button"
-            lang={l.code}
-            onClick={() => i18n.changeLanguage(l.code)}
-            aria-pressed={active}
-            title={l.label}
-            className={`cursor-pointer rounded-full px-3 py-1.5 text-xs font-semibold transition-colors ${full ? 'flex-1 text-sm' : ''} ${
-              active ? 'bg-brand-600 text-white shadow' : 'text-brand-900/70 hover:bg-brand-600/10 hover:text-brand-700'
-            } ${l.code === 'ar' ? 'font-amiri text-sm' : ''}`}
-          >
-            {full ? l.label : l.short}
-          </button>
-        )
-      })}
-    </div>
-  )
-}
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 export default function Navbar() {
   const { t, i18n } = useTranslation()
@@ -81,9 +53,7 @@ export default function Navbar() {
           </ul>
 
           <div className="flex items-center gap-2">
-            <div className="hidden sm:block">
-              <LanguageSwitcher />
-            </div>
+            <LanguageSwitcher showLabel={true} />
             <button
               type="button"
               onClick={() => setOpen((o) => !o)}

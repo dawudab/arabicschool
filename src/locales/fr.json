@@ -19,6 +19,7 @@
     "language": "Langue",
     "faculty": "Direction",
     "testimonials": "Témoignages",
+    "pricing": "Frais & Hébergement",
     "faq": "FAQ"
   },
   "hero": {
@@ -441,5 +442,27 @@
         "a": "Envoyez-nous simplement un message sur WhatsApp. Notre équipe répondra à vos questions et vous guidera étape par étape dans votre inscription."
       }
     ]
+  },
+  "pricing": {
+    "eyebrow": "Étudiants Internationaux",
+    "title": "Frais de Scolarité et Hébergement",
+    "subtitle": "Un forfait complet et abordable pour les étudiants internationaux.",
+    "annual_price": "1 625 $",
+    "annual_label": "/ an",
+    "monthly_breakdown": "Équivalent à environ 135 $ / mois (650 000 MRO par an)",
+    "included_title": "Ce qui est inclus :",
+    "included": {
+      "housing": "Logement confortable et entièrement équipé",
+      "wifi": "Wi-Fi gratuit",
+      "kitchen": "Accès complet à la cuisine étudiante",
+      "utilities": "Eau et électricité couvertes",
+      "tuition": "Enseignement coranique et islamique expert",
+      "language": "Professeurs bilingues pour faciliter l'apprentissage"
+    },
+    "excluded_title": "Ce qui n'est pas inclus :",
+    "excluded": {
+      "food": "Nourriture et repas (à la charge de l'étudiant)"
+    },
+    "cta": "Inscrivez-vous via WhatsApp"
   }
 }

@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { MapPin } from 'lucide-react'
 import { FOOTER_NAV, LATIN_NAME, NATIVE_NAME } from '../constants'
 import { Logo } from './ui'
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 export default function Footer() {
   const { t } = useTranslation()
@@ -22,7 +23,8 @@ export default function Footer() {
             {t('about.location.value')}
           </p>
         </div>
-        <nav aria-label="Footer">
+        <nav aria-label="Footer" className="flex flex-col items-center gap-4 lg:items-end">
+          <LanguageSwitcher full={false} showLabel={true} className="border-white/20 bg-white/10 text-white" />
           <ul className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-white/75">
             {FOOTER_NAV.map((key) => (
               <li key={key}>

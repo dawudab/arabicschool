@@ -19,6 +19,7 @@
     "language": "Language",
     "faculty": "Leadership",
     "testimonials": "Testimonials",
+    "pricing": "Tuition & Fees",
     "faq": "FAQ"
   },
   "hero": {
@@ -441,5 +442,27 @@
         "a": "Simply send us a message on WhatsApp. Our team will answer your questions and guide you through registration step by step."
       }
     ]
+  },
+  "pricing": {
+    "eyebrow": "International Students",
+    "title": "Tuition & Accommodation",
+    "subtitle": "A complete, affordable package for international students.",
+    "annual_price": "$1,625",
+    "annual_label": "/ year",
+    "monthly_breakdown": "Equivalent to ~$135 / month (650,000 MRO annually)",
+    "included_title": "What's Included:",
+    "included": {
+      "housing": "Comfortable, fully equipped accommodation",
+      "wifi": "Free high-speed Wi-Fi",
+      "kitchen": "Full access to the student kitchen",
+      "utilities": "Water and electricity covered",
+      "tuition": "Expert Qur'anic and Islamic tuition",
+      "language": "Bilingual teachers for easy communication"
+    },
+    "excluded_title": "What's Not Included:",
+    "excluded": {
+      "food": "Food and daily meals (Student's responsibility)"
+    },
+    "cta": "Register Now via WhatsApp"
   }
 }

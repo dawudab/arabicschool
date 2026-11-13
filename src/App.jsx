@@ -13,6 +13,7 @@ import Activities from './components/Activities'
 import Achievements from './components/Achievements'
 import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
+import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -55,6 +56,7 @@ export default function App() {
         <Achievements />
         <Testimonials />
         <Gallery />
+        <Pricing />
         <FAQ />
         <Contact />
       </main>
