@@ -14,6 +14,7 @@ import Achievements from './components/Achievements'
 import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
 import Pricing from './components/Pricing'
+import VisaInfo from './components/VisaInfo'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -57,6 +58,7 @@ export default function App() {
         <Testimonials />
         <Gallery />
         <Pricing />
+        <VisaInfo />
         <FAQ />
         <Contact />
       </main>

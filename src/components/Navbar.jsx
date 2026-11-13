@@ -5,6 +5,8 @@ import { NAV_ITEMS, WHATSAPP_URL, NATIVE_NAME, LATIN_NAME } from '../constants'
 import { Logo, WhatsAppIcon } from './ui'
 import { LanguageSwitcher } from './LanguageSwitcher'
 
+const DROPDOWN_ITEMS = ['about', 'programs', 'faculty', 'achievements', 'gallery', 'pricing', 'visa', 'faq', 'contact']
+
 export default function Navbar() {
   const { t, i18n } = useTranslation()
   const [open, setOpen] = useState(false)
@@ -53,14 +55,22 @@ export default function Navbar() {
           </ul>
 
           <div className="flex items-center gap-2">
-            <LanguageSwitcher showLabel={true} />
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden items-center gap-2 rounded-xl bg-whatsapp px-4 py-2.5 text-sm font-semibold text-brand-950 shadow-xs transition hover:brightness-105 md:inline-flex"
+            >
+              <WhatsAppIcon className="size-4" />
+              <span>{t('hero.ctaPrimary')}</span>
+            </a>
             <button
               type="button"
               onClick={() => setOpen((o) => !o)}
               aria-expanded={open}
               aria-controls="mobile-menu"
               aria-label={open ? t('nav.closeMenu') : t('nav.openMenu')}
-              className="inline-flex size-11 cursor-pointer items-center justify-center rounded-xl border border-brand-600/15 bg-white/60 text-brand-700 transition hover:bg-white xl:hidden"
+              className="inline-flex size-11 cursor-pointer items-center justify-center rounded-xl border border-brand-600/15 bg-white/60 text-brand-700 transition hover:bg-white"
             >
               {open ? <X className="size-5" /> : <Menu className="size-5" />}
             </button>
@@ -69,33 +79,38 @@ export default function Navbar() {
 
         <div
           id="mobile-menu"
-          className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-300 xl:hidden ${
+          className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-300 ${
             open ? 'grid-rows-[1fr] opacity-100' : 'pointer-events-none grid-rows-[0fr] opacity-0'
           }`}
         >
           <div className="min-h-0">
-            <ul className="flex flex-col gap-1 border-t border-brand-600/10 px-3 pt-3">
-              {NAV_ITEMS.map((key) => (
+            <ul className="grid grid-cols-1 gap-1 border-t border-brand-600/10 px-3 pt-3 sm:grid-cols-2 xl:grid-cols-3">
+              {DROPDOWN_ITEMS.map((key) => (
                 <li key={key}>
                   <a
                     href={`#${key}`}
                     onClick={() => setOpen(false)}
                     tabIndex={open ? 0 : -1}
-                    className="block rounded-xl px-4 py-3 text-base font-medium text-brand-900/85 transition hover:bg-brand-600/5 hover:text-brand-700"
+                    className="block rounded-xl px-4 py-2.5 text-base font-medium text-brand-900/85 transition hover:bg-brand-600/5 hover:text-brand-700"
                   >
                     {t(`nav.${key}`)}
                   </a>
                 </li>
               ))}
             </ul>
-            <div className="flex flex-col gap-3 p-4">
-              <LanguageSwitcher full />
+            <div className="flex flex-col gap-4 border-t border-brand-600/10 p-4">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <span className="text-xs font-semibold tracking-wider text-slate-500 uppercase">
+                  {t('nav.select_language', t('nav.language', 'Language'))}
+                </span>
+                <LanguageSwitcher showLabel />
+              </div>
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 tabIndex={open ? 0 : -1}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 font-semibold text-brand-950"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 font-semibold text-brand-950 md:hidden"
               >
                 <WhatsAppIcon />
                 {t('hero.ctaPrimary')}
